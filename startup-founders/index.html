@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-950">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Slate for Startup Founders – Investor-ready AI planning workspace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta
+            name="description"
+            content="Slate helps startup founders and solo builders capture ideas, structure investor-ready plans, and export AI-ready prompts to validate MVPs fast."
+    />
+    <meta name="keywords" content="startup founder AI tool, solo builder roadmap, investor-ready briefs, AI MVP planning"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="theme-color" content="#020617"/>
+    <link rel="icon" href="/logo.png" type="image/png" sizes="64x64"/>
+    <link rel="canonical" href="https://slate.run/startup-founders/"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Slate for Startup Founders – Investor-ready AI workspace"/>
+    <meta property="og:description" content="Founders capture ideas, structure pitch decks, and export LLM-ready prompts to build MVPs before hiring."/>
+    <meta property="og:url" content="https://slate.run/startup-founders/"/>
+    <meta property="og:site_name" content="Slate"/>
+    <meta property="og:image" content="https://slate.run/full_logo.png"/>
+    <meta property="og:image:alt" content="Slate kanban workspace preview"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Slate for Startup Founders – Investor-ready AI planning"/>
+    <meta name="twitter:description" content="Structure roadmaps, prep investor briefs, and export AI-ready context to validate MVPs faster."/>
+    <meta name="twitter:image" content="https://slate.run/full_logo.png"/>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Slate",
+            "operatingSystem": "Web",
+            "applicationCategory": "ProductivityApplication",
+            "url": "https://slate.run/startup-founders/",
+            "description": "Slate keeps founder roadmaps structured so AI agents can export trustworthy context and generate auditable MVP prototypes.",
+            "creator": {
+                "@type": "Organization",
+                "name": "Slate"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/PreOrder",
+                "url": "https://slate.run/startup-founders/#waitlist"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How fast can I get started?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Join the waitlist to unlock founder templates, sample boards, and onboarding videos so you can plan the next release immediately."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I share boards with investors or contractors?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Slate exports read-only decks and AI-ready prompts or invite-only boards with activity logs for partners and contractors."
+                    }
+                }
+            ]
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+</head>
+
+<body class="h-full text-slate-100">
+<div class="min-h-screen flex flex-col">
+    <!-- Nav -->
+    <header class="border-b border-slate-800/60 bg-slate-950/80 backdrop-blur">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="flex items-center gap-2">
+                <img src="/logo.png" alt="Slate logo" class="h-7 w-7 rounded-md flex items-center justify-center">
+                <span class="text-lg font-semibold tracking-tight">Slate</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+                <a href="#how" class="hover:text-slate-50">How it works</a>
+                <a href="#features" class="hover:text-slate-50">Features</a>
+                <a href="#who" class="hover:text-slate-50">Who it’s for</a>
+                <a href="#faq" class="hover:text-slate-50">FAQ</a>
+                <a href="#waitlist"
+                   class="ml-4 rounded-full border border-slate-600 px-4 py-1.5 text-sm font-medium hover:border-slate-300 hover:text-slate-50">
+                    Join waitlist
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1">
+        <!-- Hero -->
+        <section class="relative overflow-hidden" aria-labelledby="hero-title">
+            <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(148,163,184,0.2),_transparent_55%)]"></div>
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
+                <div class="grid gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] items-center">
+                    <div>
+                        <div class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-300 mb-4">
+                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                            Built for founders & solo builders
+                        </div>
+                        <h1 id="hero-title" class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-50">
+                            Validate every idea with
+                            <br class="hidden sm:block"/>
+                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-50 to-slate-300">investor-ready prompts.</span>
+                        </h1>
+                        <p class="mt-5 text-base sm:text-lg text-slate-300 max-w-xl">
+                            Slate captures brainstorms, customer notes, and lean canvases, then turns them into AI-ready launch briefs. Founders export pitch decks, prototype prompts, and investor updates without hiring a full team.
+                        </p>
+
+                        <!-- HERO FORM -->
+                        <form
+                                id="hero-form"
+                                class="mt-8 flex flex-col sm:flex-row gap-3 sm:items-center max-w-md"
+                        >
+                            <label class="sr-only" for="hero-email">Email</label>
+                            <input
+                                    type="email"
+                                    id="hero-email"
+                                    required
+                                    placeholder="you@company.com"
+                                    class="w-full rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 focus:border-slate-300 focus:outline-none focus:ring-1 focus:ring-slate-400"
+                            />
+                            <button
+                                    type="submit"
+                                    class="shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-white"
+                            >
+                                Join waitlist
+                            </button>
+                        </form>
+                        <p data-status class="text-xs text-slate-400 mt-1" role="status" aria-live="polite"></p>
+
+                        <dl class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-slate-300">
+                            <div>
+                                <dt class="font-medium text-slate-100">Structured ideas</dt>
+                                <dd class="mt-1 text-slate-400">Organize experiments, ICPs, and features in one board.</dd>
+                            </div>
+                            <div>
+                                <dt class="font-medium text-slate-100">AI-ready briefs</dt>
+                                <dd class="mt-1 text-slate-400">Export prompts formatted for your favorite builder tools.</dd>
+                            </div>
+                            <div>
+                                <dt class="font-medium text-slate-100">Investor proof</dt>
+                                <dd class="mt-1 text-slate-400">Show a traceable path from insight to prototype.</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- Right Column: Board Mock -->
+                    <div class="relative mx-auto max-w-4xl scale-[1.15] origin-top-right">
+                        <div class="absolute -top-20 -right-20 h-72 w-72 bg-emerald-500/5 rounded-full blur-[140px]"></div>
+
+                        <!-- Screenshot frame -->
+                        <div class="relative rounded-2xl border border-slate-800 bg-slate-950/95 shadow-2xl shadow-black/60 overflow-hidden backdrop-blur-sm">
+                            <!-- Subtle inner glow -->
+                            <div class="absolute inset-0 pointer-events-none rounded-2xl shadow-[inset_0_0_40px_rgba(255,255,255,0.03)]"></div>
+
+                            <!-- App navbar (mock) -->
+                            <div class="flex items-center justify-between border-b border-slate-800/80 px-4 py-3">
+                                <div class="flex items-center gap-2">
+                                    <img src="/logo.png" alt="Slate logo" class="h-7 w-7 rounded-md flex items-center justify-center">
+                                    <span class="text-sm font-semibold text-slate-100 tracking-tight">Slate</span>
+                                    <span class="mx-2 h-5 w-px bg-slate-800/80"></span>
+                                    <span class="text-[12px] text-slate-400">Demo Board</span>
+                                </div>
+                                <div class="hidden md:flex items-center gap-5 text-[12px] text-slate-400">
+                                    <button class="hover:text-slate-100">Boards</button>
+                                    <button class="hover:text-slate-100">Workspace</button>
+                                    <button class="hover:text-slate-100">Agent</button>
+                                    <div class="h-7 w-7 rounded-full bg-slate-800/80 flex items-center justify-center text-[10px] text-slate-300 shadow-inner">
+                                        BL
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Larger board -->
+                            <div class="grid grid-cols-3 gap-5 px-6 py-5">
+                                <!-- To Do -->
+                                <div class="rounded-xl bg-slate-900/80 border border-slate-800 p-4">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="font-medium text-slate-100 text-sm">To Do</span>
+                                        <span class="text-xs text-slate-500">2</span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div class="rounded-lg bg-slate-800/70 p-3">
+                                            <p class="font-medium text-[13px] text-slate-50">Welcome card</p>
+                                            <p class="mt-1 text-[11px] text-slate-400">This is a demo card to get you started.</p>
+                                        </div>
+
+                                        <div class="rounded-lg bg-slate-800/50 p-3">
+                                            <p class="font-medium text-[13px] text-slate-50">Try parent–child cards</p>
+                                            <p class="mt-1 text-[11px] text-slate-400">Nest tasks up to 4 levels deep.</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="mt-3 text-[11px] text-slate-400 hover:text-slate-200">+ Add card</button>
+                                </div>
+
+                                <!-- In Progress -->
+                                <div class="rounded-xl bg-slate-900/80 border border-slate-800 p-4">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="font-medium text-slate-100 text-sm">In Progress</span>
+                                        <span class="text-xs text-emerald-400">1</span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div class="rounded-lg bg-slate-800/70 p-3">
+                                            <p class="font-medium text-[13px] text-slate-50">Define card schema</p>
+                                            <p class="mt-1 text-[11px] text-slate-400">Titles, descriptions, hierarchy, metadata.</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="mt-3 text-[11px] text-slate-400 hover:text-slate-200">+ Add card</button>
+                                </div>
+
+                                <!-- Done -->
+                                <div class="rounded-xl bg-slate-900/80 border border-slate-800 p-4">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="font-medium text-slate-100 text-sm">Done</span>
+                                        <span class="text-xs text-slate-500">1</span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div class="rounded-lg bg-slate-800/70 p-3">
+                                            <p class="font-medium text-[13px] text-slate-50">Export card trees</p>
+                                            <p class="mt-1 text-[11px] text-slate-400">
+                                                Use <code class="font-mono">GET /cards/:id/export</code> to get JSON hierarchy.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <button class="mt-3 text-[11px] text-slate-400 hover:text-slate-200">+ Add card</button>
+                                </div>
+                            </div>
+                            <!-- AI trigger button -->
+                            <button
+                                    type="button"
+                                    class="absolute bottom-4 right-4 h-11 w-11 rounded-full bg-gradient-to-tr from-amber-400 via-amber-300 to-emerald-300 shadow-lg shadow-amber-500/40 flex items-center justify-center border border-amber-200/70 hover:scale-105 transition-transform"
+                                    aria-label="Open Slate AI"
+                            >
+                                <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="#111"
+                                        stroke-width="2.2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="h-6 w-6"
+                                >
+                                    <path d="M13 2 L6 14 H12 L11 22 L18 10 H12 L13 2 Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualizer + Agent section -->
+        <section class="border-t border-slate-800/70 bg-slate-950/95">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14">
+                <div class="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:items-start">
+                    <!-- ReactFlow-style tree visualizer -->
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 sm:p-5">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-2">
+                                <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                                <span class="text-xs font-semibold tracking-wide text-slate-200 uppercase">
+                                    Card hierarchy
+                                </span>
+                            </div>
+                            <span class="text-[11px] text-slate-500 font-mono">ReactFlow view</span>
+                        </div>
+
+                        <div class="relative h-64 sm:h-72">
+                            <!-- Root node -->
+                            <div class="absolute left-1/2 -translate-x-1/2 top-2">
+                                <div class="rounded-lg border border-emerald-500/60 bg-slate-900 px-3 py-2 shadow-sm shadow-emerald-500/20">
+                                    <p class="text-[11px] font-semibold text-emerald-200">Export card trees</p>
+                                    <p class="text-[10px] text-slate-400">Root card · depth 3</p>
+                                </div>
+                            </div>
+
+                            <!-- Level 1 children -->
+                            <div class="absolute inset-x-6 top-20 flex justify-between">
+                                <div class="flex flex-col items-center gap-1">
+                                    <div class="h-8 w-px bg-slate-700"></div>
+                                    <div class="rounded-lg border border-slate-700 bg-slate-900/90 px-3 py-2">
+                                        <p class="text-[11px] font-semibold text-slate-100">Download JSON</p>
+                                        <p class="text-[10px] text-slate-500">Leaf actions</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-1">
+                                    <div class="h-8 w-px bg-slate-700"></div>
+                                    <div class="rounded-lg border border-slate-700 bg-slate-900/90 px-3 py-2">
+                                        <p class="text-[11px] font-semibold text-slate-100">Copy to clipboard</p>
+                                        <p class="text-[10px] text-slate-500">Leaf actions</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Connecting line between children -->
+                            <div class="absolute inset-x-16 top-[88px] h-px bg-slate-700/80"></div>
+
+                            <!-- Level 2 example branch -->
+                            <div class="absolute left-1/4 bottom-6 flex flex-col items-center gap-1">
+                                <div class="h-8 w-px bg-slate-700"></div>
+                                <div class="rounded-lg border border-slate-700 bg-slate-900/90 px-3 py-2">
+                                    <p class="text-[11px] font-semibold text-slate-100">API client</p>
+                                    <p class="text-[10px] text-slate-500">Generated from subtree</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute right-8 bottom-10 rounded-md border border-slate-700 bg-slate-900/90 px-3 py-1.5 text-[10px] text-slate-400 font-mono">
+                                7 nodes · depth 3
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terminal-style agent chat -->
+                    <div class="rounded-2xl border border-slate-800 bg-black/95 p-4 sm:p-5 shadow-xl shadow-black/60">
+                        <div class="flex items-center justify-between mb-3 border-b border-slate-800 pb-2">
+                            <div class="flex items-center gap-2">
+                                <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                                <span class="text-[11px] font-semibold text-emerald-200 tracking-wide uppercase">
+                                    Slate agent
+                                </span>
+                            </div>
+                            <span class="text-[10px] font-mono text-slate-500">TTY1</span>
+                        </div>
+
+                        <div class="space-y-2 font-mono text-[10px] leading-relaxed text-slate-200">
+                            <div>
+                                <span class="text-emerald-300">you@slate</span>
+                                <span class="text-slate-500">:$</span>
+                                <span class="ml-1 text-slate-100">
+                                    export-card-tree --card "Export card trees" --format json
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-sky-300">agent</span>
+                                <span class="text-slate-500"> &gt;</span>
+                                <span class="ml-1 text-slate-200">
+                                    exporting hierarchy (depth=3) and generating suggestions…
+                                </span>
+                            </div>
+
+                            <div class="mt-2 rounded border border-slate-800 bg-slate-950/90 p-2">
+                                <p class="text-emerald-300 mb-1">▶ suggestions</p>
+                                <pre class="whitespace-pre-wrap">
+- Generate REST API for card_tree.json
+- Propose DB schema for cards + relations
+- Draft tests for export endpoint
+                                </pre>
+                            </div>
+
+                            <div class="mt-2 rounded border border-slate-800 bg-slate-950/90 p-2">
+                                <p class="text-emerald-300 mb-1">▶ card_tree.json</p>
+                                <pre class="whitespace-pre-wrap">
+{
+  "id": 3,
+  "title": "Export card trees",
+  "children": [
+    { "id": 7, "title": "Download JSON" },
+    { "id": 8, "title": "Copy to clipboard" }
+  ]
+}
+                                </pre>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 rounded-lg border border-slate-800 bg-slate-950/90 px-2.5 py-1.5 flex items-center">
+                            <span class="text-[10px] text-slate-500 font-mono">you@slate:$</span>
+                            <input
+                                type="text"
+                                readonly
+                                value="generate backend service from this tree…"
+                                class="ml-2 flex-1 bg-transparent text-[10px] text-slate-300 font-mono outline-none border-none placeholder:text-slate-600"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how" class="border-t border-slate-800/70 bg-slate-950" aria-labelledby="how-heading">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+                <h2 id="how-heading" class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">
+                    How founders go from idea to MVP
+                </h2>
+                <p class="mt-3 text-sm sm:text-base text-slate-300 max-w-2xl">
+                    Slate keeps discovery notes structured so AI can actually execute them.
+                </p>
+                <div class="mt-10 grid gap-6 md:grid-cols-3 text-sm">
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">1. Capture ideas</h3>
+                        <p class="mt-2 text-slate-300">Drop brainstorms and customer learnings into cards.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">2. Shape a plan</h3>
+                        <p class="mt-2 text-slate-300">
+                            Prioritize experiments, go-to-market milestones, and budgets.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">3. Generate & share</h3>
+                        <p class="mt-2 text-slate-300">Export prompts for AI builders, pitch-ready briefs, and investor updates.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="border-t border-slate-800/70 bg-slate-950" aria-labelledby="features-heading">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+                <h2 id="features-heading" class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">Designed for
+                    professionals</h2>
+                <p class="mt-3 text-sm sm:text-base text-slate-300 max-w-2xl">
+                    Slate bridges the gap between napkin ideas and AI build tools so you can test markets before payroll grows.
+                </p>
+
+                <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 text-sm">
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Launch templates</h3>
+                        <p class="mt-2 text-slate-300">Use repeatable boards for GTM, fundraising, and sprint planning.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">AI-ready exports</h3>
+                        <p class="mt-2 text-slate-300">Send investor briefs, product specs, or build prompts straight to AI copilots.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Investor-ready history</h3>
+                        <p class="mt-2 text-slate-300">Show partners and backers exactly how insights became prototypes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who it's for -->
+        <section id="who" class="border-t border-slate-800/70 bg-slate-950" aria-labelledby="who-heading">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+                <h2 id="who-heading" class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">Who Slate is for</h2>
+                <div class="mt-8 grid gap-6 md:grid-cols-3 text-sm">
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Founders</h3>
+                        <p class="mt-2 text-slate-300">Organize GTM, fundraising, and build tracks in one workspace.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Solo builders</h3>
+                        <p class="mt-2 text-slate-300">Bounce between research, product, and fundraising without losing context.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Fractional teams</h3>
+                        <p class="mt-2 text-slate-300">Share investor-ready briefs with contractors and advisors.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="border-t border-slate-800/70 bg-slate-950" aria-labelledby="faq-heading">
+            <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+                <h2 id="faq-heading" class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">Founder FAQ</h2>
+
+                <div class="mt-8 space-y-6 text-sm">
+
+                    <details class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between">
+                            <span class="font-medium text-slate-100">How fast can I get started?</span>
+                        </summary>
+                        <p class="mt-3 text-slate-300">
+                            The waitlist unlocks templates, example boards, and onboarding videos immediately so you can plan your next release today.
+                        </p>
+                    </details>
+
+                    <details class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between">
+                            <span class="font-medium text-slate-100">Can I share boards with investors or contractors?</span>
+                        </summary>
+                        <p class="mt-3 text-slate-300">
+                            Yes — export read-only decks, AI-ready prompts, or invite-only boards with activity logs.
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Waitlist CTA -->
+        <section id="waitlist" class="border-t border-slate-800/70 bg-slate-950" aria-labelledby="waitlist-heading">
+            <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+                <div class="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 px-6 py-10 sm:px-10">
+                    <h2 id="waitlist-heading" class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">
+                        Start every project with a clean Slate.
+                    </h2>
+                    <p class="mt-3 text-sm sm:text-base text-slate-300 max-w-xl">
+                        Join the early access waitlist and help shape Slate for founders and solo builders.
+                    </p>
+
+                    <!-- FOOTER FORM -->
+                    <form
+                            id="footer-form"
+                            class="mt-6 flex flex-col sm:flex-row gap-3 sm:items-center max-w-md"
+                    >
+                        <label class="sr-only" for="footer-email">Email</label>
+                        <input
+                                type="email"
+                                id="footer-email"
+                                required
+                                placeholder="you@company.com"
+                                class="w-full rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 focus:border-slate-300 focus:outline-none focus:ring-1 focus:ring-slate-400"
+                        />
+                        <button
+                                type="submit"
+                                class="shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-white"
+                        >
+                            Join waitlist
+                        </button>
+                    </form>
+                    <p data-status class="mt-2 text-xs text-slate-400" role="status" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/70 bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+            <span>© <span id="year"></span> Slate. All rights reserved.</span>
+            <span>Pre-launch concept · Subject to change.</span>
+        </div>
+    </footer>
+</div>
+
+<!-- SCRIPT BLOCK: handles email submissions -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    async function submitWaitlistEmail(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const emailInput = form.querySelector("input[type='email']");
+        const statusEl = form.parentElement.querySelector("[data-status]");
+        const email = emailInput.value.trim();
+
+        if (!email) {
+            statusEl.textContent = "Please enter a valid email.";
+            return;
+        }
+
+        statusEl.textContent = "Submitting...";
+
+        try {
+            const res = await fetch("/api/waitlist", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "x-slate-source": "landing-page"
+                },
+                body: JSON.stringify({email})
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                statusEl.textContent = data.error || "Something went wrong.";
+                return;
+            }
+
+            statusEl.textContent = data.message || "Added to waitlist!";
+            emailInput.value = "";
+
+        } catch (err) {
+            console.error(err);
+            statusEl.textContent = "Network error. Try again.";
+        }
+    }
+
+    const heroForm = document.getElementById("hero-form");
+    const footerForm = document.getElementById("footer-form");
+
+    heroForm.addEventListener("submit", submitWaitlistEmail);
+    footerForm.addEventListener("submit", submitWaitlistEmail);
+</script>
+
+</body>
+</html>

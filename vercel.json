@@ -1,6 +1,12 @@
 {
   "rewrites": [
     { "source": "/product-professionals", "destination": "/product-professionals/index.html" },
-    { "source": "/product-professionals/", "destination": "/product-professionals/index.html" }
+    { "source": "/product-professionals/", "destination": "/product-professionals/index.html" },
+    { "source": "/ai-engineers", "destination": "/ai-engineers/index.html" },
+    { "source": "/ai-engineers/", "destination": "/ai-engineers/index.html" },
+    { "source": "/startup-founders", "destination": "/startup-founders/index.html" },
+    { "source": "/startup-founders/", "destination": "/startup-founders/index.html" },
+    { "source": "/agency-leads", "destination": "/agency-leads/index.html" },
+    { "source": "/agency-leads/", "destination": "/agency-leads/index.html" }
   ]
 }
