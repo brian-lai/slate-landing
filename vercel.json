@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/product-professionals", "destination": "/product-professionals/index.html" },
+    { "source": "/product-professionals/", "destination": "/product-professionals/index.html" }
+  ]
+}
