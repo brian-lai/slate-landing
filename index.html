@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-950">
+<head>
+    <meta charset="UTF-8" />
+    <title>Slate – AI-ready kanban for rapid prototyping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+            name="description"
+            content="Slate is an AI-ready kanban workspace that turns structured plans into working, auditable prototypes."
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+</head>
+
+<body class="h-full text-slate-100">
+<div class="min-h-screen flex flex-col">
+    <!-- Nav -->
+    <header class="border-b border-slate-800/60 bg-slate-950/80 backdrop-blur">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="flex items-center gap-2">
+                <div class="h-7 w-7 rounded-md bg-gradient-to-br from-slate-300 to-slate-500 flex items-center justify-center">
+                    <span class="text-xs font-semibold text-slate-900">S</span>
+                </div>
+                <span class="text-lg font-semibold tracking-tight">Slate</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+                <a href="#how" class="hover:text-slate-50">How it works</a>
+                <a href="#features" class="hover:text-slate-50">Features</a>
+                <a href="#who" class="hover:text-slate-50">Who it’s for</a>
+                <a href="#faq" class="hover:text-slate-50">FAQ</a>
+                <a href="#waitlist" class="ml-4 rounded-full border border-slate-600 px-4 py-1.5 text-sm font-medium hover:border-slate-300 hover:text-slate-50">
+                    Join waitlist
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1">
+        <!-- Hero -->
+        <section class="relative overflow-hidden">
+            <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(148,163,184,0.2),_transparent_55%)]"></div>
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
+                <div class="grid gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] items-center">
+                    <div>
+                        <div class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-300 mb-4">
+                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                            Pre-launch · Early access waitlist
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-50">
+                            Give your ideas a<br class="hidden sm:block" />
+                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-50 to-slate-300">clean Slate.</span>
+                        </h1>
+                        <p class="mt-5 text-base sm:text-lg text-slate-300 max-w-xl">
+                            Slate is an AI-ready kanban workspace that turns structured plans into working,
+                            auditable prototypes. Plan in boards, export as LLM context, and generate with confidence.
+                        </p>
+
+                        <!-- HERO FORM -->
+                        <form
+                                id="hero-form"
+                                class="mt-8 flex flex-col sm:flex-row gap-3 sm:items-center max-w-md"
+                        >
+                            <label class="sr-only" for="email">Email</label>
+                            <input
+                                    type="email"
+                                    id="hero-email"
+                                    required
+                                    placeholder="you@company.com"
+                                    class="w-full rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 focus:border-slate-300 focus:outline-none focus:ring-1 focus:ring-slate-400"
+                            />
+                            <button
+                                    type="submit"
+                                    class="shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-white"
+                            >
+                                Join waitlist
+                            </button>
+                        </form>
+                        <p data-status class="text-xs text-slate-400 mt-1"></p>
+
+                        <dl class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-slate-300">
+                            <div>
+                                <dt class="font-medium text-slate-100">Structured</dt>
+                                <dd class="mt-1 text-slate-400">Hierarchical cards for real-world projects.</dd>
+                            </div>
+                            <div>
+                                <dt class="font-medium text-slate-100">AI-ready</dt>
+                                <dd class="mt-1 text-slate-400">One-click exports for your favorite LLM tools.</dd>
+                            </div>
+                            <div>
+                                <dt class="font-medium text-slate-100">Auditable</dt>
+                                <dd class="mt-1 text-slate-400">Every prototype traceable back to decisions.</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- Right Column: Board Mock -->
+                    <div class="relative">
+                        <div class="absolute -top-10 -right-10 h-40 w-40 bg-emerald-500/10 rounded-full blur-3xl"></div>
+                        <div class="relative rounded-2xl border border-slate-800/80 bg-slate-900/80 shadow-xl shadow-black/40 p-4">
+                            <!-- (Board UI omitted here for brevity—same as earlier version) -->
+                            <!-- FULL BOARD MOCKUP OMITTED TO FIT MESSAGE LIMIT -->
+                            <p class="text-[11px] text-slate-400">[Board mockup placeholder]</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how" class="border-t border-slate-800/70 bg-slate-950">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+                <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">
+                    How Slate turns boards into prototypes
+                </h2>
+                <p class="mt-3 text-sm sm:text-base text-slate-300 max-w-2xl">
+                    Slate keeps your planning structured so AI can actually understand it.
+                </p>
+                <div class="mt-10 grid gap-6 md:grid-cols-3 text-sm">
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">1. Plan visually</h3>
+                        <p class="mt-2 text-slate-300">Boards, columns, and hierarchical cards.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">2. Export AI-ready context</h3>
+                        <p class="mt-2 text-slate-300">
+                            JSON, LLM context, or markdown.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">3. Generate & iterate</h3>
+                        <p class="mt-2 text-slate-300">Produce specs, API stubs, UIs, and more.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="border-t border-slate-800/70 bg-slate-950">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+                <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">Designed for professionals</h2>
+                <p class="mt-3 text-sm sm:text-base text-slate-300 max-w-2xl">
+                    Slate bridges the gap between planning tools and AI generation.
+                </p>
+
+                <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 text-sm">
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Hierarchical kanban boards</h3>
+                        <p class="mt-2 text-slate-300">Parent/child cards for real-world complexity.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">AI-ready exports</h3>
+                        <p class="mt-2 text-slate-300">Structured formats for LLMs.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Auditable workflows</h3>
+                        <p class="mt-2 text-slate-300">Trace any generation back to the source.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who it's for -->
+        <section id="who" class="border-t border-slate-800/70 bg-slate-950">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+                <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">Who Slate is for</h2>
+                <div class="mt-8 grid gap-6 md:grid-cols-3 text-sm">
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Product managers</h3>
+                        <p class="mt-2 text-slate-300">Turn product discovery into structured AI input.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Engineers</h3>
+                        <p class="mt-2 text-slate-300">Generate API stubs, diagrams, and plans.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <h3 class="text-base font-semibold text-slate-50">Founders</h3>
+                        <p class="mt-2 text-slate-300">Validate more ideas with structured prompts.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="border-t border-slate-800/70 bg-slate-950">
+            <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+                <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">Questions about Slate</h2>
+
+                <div class="mt-8 space-y-6 text-sm">
+
+                    <details class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between">
+                            <span class="font-medium text-slate-100">Is Slate available yet?</span>
+                        </summary>
+                        <p class="mt-3 text-slate-300">
+                            Slate is currently in pre-launch. Join the waitlist to be notified.
+                        </p>
+                    </details>
+
+                    <details class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between">
+                            <span class="font-medium text-slate-100">Does Slate work with my AI tools?</span>
+                        </summary>
+                        <p class="mt-3 text-slate-300">
+                            Yes — JSON, markdown, and optimized LLM context work with all modern LLMs.
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Waitlist CTA -->
+        <section id="waitlist" class="border-t border-slate-800/70 bg-slate-950">
+            <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+                <div class="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 px-6 py-10 sm:px-10">
+                    <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-50">
+                        Start every project with a clean Slate.
+                    </h2>
+                    <p class="mt-3 text-sm sm:text-base text-slate-300 max-w-xl">
+                        Join the early access waitlist and help shape Slate.
+                    </p>
+
+                    <!-- FOOTER FORM -->
+                    <form
+                            id="footer-form"
+                            class="mt-6 flex flex-col sm:flex-row gap-3 sm:items-center max-w-md"
+                    >
+                        <label class="sr-only" for="email-footer">Email</label>
+                        <input
+                                type="email"
+                                id="footer-email"
+                                required
+                                placeholder="you@company.com"
+                                class="w-full rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 focus:border-slate-300 focus:outline-none focus:ring-1 focus:ring-slate-400"
+                        />
+                        <button
+                                type="submit"
+                                class="shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-white"
+                        >
+                            Join waitlist
+                        </button>
+                    </form>
+                    <p data-status class="mt-2 text-xs text-slate-400"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/70 bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+            <span>© <span id="year"></span> Slate. All rights reserved.</span>
+            <span>Pre-launch concept · Subject to change.</span>
+        </div>
+    </footer>
+</div>
+
+<!-- SCRIPT BLOCK: handles email submissions -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    async function submitWaitlistEmail(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const emailInput = form.querySelector("input[type='email']");
+        const statusEl = form.parentElement.querySelector("[data-status]");
+        const email = emailInput.value.trim();
+
+        if (!email) {
+            statusEl.textContent = "Please enter a valid email.";
+            return;
+        }
+
+        statusEl.textContent = "Submitting...";
+
+        try {
+            const res = await fetch("/api/waitlist", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "x-slate-source": "landing-page"
+                },
+                body: JSON.stringify({ email })
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                statusEl.textContent = data.error || "Something went wrong.";
+                return;
+            }
+
+            statusEl.textContent = data.message || "Added to waitlist!";
+            emailInput.value = "";
+
+        } catch (err) {
+            console.error(err);
+            statusEl.textContent = "Network error. Try again.";
+        }
+    }
+
+    const heroForm = document.getElementById("hero-form");
+    const footerForm = document.getElementById("footer-form");
+
+    heroForm.addEventListener("submit", submitWaitlistEmail);
+    footerForm.addEventListener("submit", submitWaitlistEmail);
+</script>
+
+</body>
+</html>
