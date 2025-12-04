@@ -8,7 +8,7 @@
             name="description"
             content="Slate helps agencies and consultancies capture client briefs, track approvals, and export AI-ready deliverables with audit trails."
     />
-    <meta name="keywords" content="agency AI templates, consultancy workflow, client-ready prompts, white-label exports, AI planning workspace"/>
+    <meta name="keywords" content="agency AI templates, consultancy workflow, client-ready prompts, white-label exports, AI planning workspace, agency AI automation, client deliverable automation, white-label AI tools, agency project management, consulting AI tools"/>
     <meta name="robots" content="index, follow"/>
     <meta name="theme-color" content="#020617"/>
     <link rel="icon" href="/logo.png" type="image/png" sizes="64x64"/>
@@ -25,6 +25,29 @@
     <meta name="twitter:title" content="Slate for Agencies – Client-ready AI workspace"/>
     <meta name="twitter:description" content="Capture client briefs, run AI workflows, and share audit-ready exports with every account."/>
     <meta name="twitter:image" content="https://buildslate.dev/full_logo.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta name="author" content="Slate"/>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Slate",
+                    "item": "https://buildslate.dev/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Agency Leads",
+                    "item": "https://buildslate.dev/agency-leads/"
+                }
+            ]
+        }
+    </script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -57,7 +80,7 @@
                     "name": "Can clients review exports without logging in?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. Share read-only links or white-label decks so clients can review deliverables without additional accounts."
+                        "text": "Yes. Share read-only links or white-label decks that inherit your agency branding. Clients see polished deliverables without needing a Slate account."
                     }
                 },
                 {
@@ -65,7 +88,23 @@
                     "name": "Does Slate keep compliance logs?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Every export is timestamped with requester, client, and attachments so you can prove how AI outputs were generated."
+                        "text": "Every export is timestamped with requester, client, board context, and attachments. This audit trail lets you prove exactly how AI outputs were generated and approved."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I white-label exports for clients?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Exports can be customized with your agency branding. Deliver professional presentations, implementation guides, or prompt packs that look like they came directly from your team."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I manage multiple client workspaces?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Each client gets isolated boards with separate access controls. Your team can switch between client contexts while maintaining clear boundaries."
                     }
                 }
             ]
@@ -134,7 +173,7 @@
                                     type="submit"
                                     class="shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-white"
                             >
-                                Join waitlist
+                                Get Agency Access
                             </button>
                         </form>
                         <p data-status class="text-xs text-slate-400 mt-1" role="status" aria-live="polite"></p>
@@ -184,22 +223,22 @@
 
                             <!-- Larger board -->
                             <div class="grid grid-cols-3 gap-5 px-6 py-5">
-                                <!-- To Do -->
+                                <!-- Client Intake -->
                                 <div class="rounded-xl bg-slate-900/80 border border-slate-800 p-4">
                                     <div class="flex items-center justify-between mb-3">
-                                        <span class="font-medium text-slate-100 text-sm">To Do</span>
+                                        <span class="font-medium text-slate-100 text-sm">Client Intake</span>
                                         <span class="text-xs text-slate-500">2</span>
                                     </div>
 
                                     <div class="space-y-3">
                                         <div class="rounded-lg bg-slate-800/70 p-3">
-                                            <p class="font-medium text-[13px] text-slate-50">Welcome card</p>
-                                            <p class="mt-1 text-[11px] text-slate-400">This is a demo card to get you started.</p>
+                                            <p class="font-medium text-[13px] text-slate-50">Client onboarding flow</p>
+                                            <p class="mt-1 text-[11px] text-slate-400">Goals, timeline, stakeholders.</p>
                                         </div>
 
                                         <div class="rounded-lg bg-slate-800/50 p-3">
-                                            <p class="font-medium text-[13px] text-slate-50">Try parent–child cards</p>
-                                            <p class="mt-1 text-[11px] text-slate-400">Nest tasks up to 4 levels deep.</p>
+                                            <p class="font-medium text-[13px] text-slate-50">Campaign deliverables</p>
+                                            <p class="mt-1 text-[11px] text-slate-400">Assets, copy, review schedule.</p>
                                         </div>
                                     </div>
 
@@ -215,26 +254,26 @@
 
                                     <div class="space-y-3">
                                         <div class="rounded-lg bg-slate-800/70 p-3">
-                                            <p class="font-medium text-[13px] text-slate-50">Define card schema</p>
-                                            <p class="mt-1 text-[11px] text-slate-400">Titles, descriptions, hierarchy, metadata.</p>
+                                            <p class="font-medium text-[13px] text-slate-50">Quarterly report</p>
+                                            <p class="mt-1 text-[11px] text-slate-400">Metrics, insights, next steps.</p>
                                         </div>
                                     </div>
 
                                     <button class="mt-3 text-[11px] text-slate-400 hover:text-slate-200">+ Add card</button>
                                 </div>
 
-                                <!-- Done -->
+                                <!-- Ready for Client -->
                                 <div class="rounded-xl bg-slate-900/80 border border-slate-800 p-4">
                                     <div class="flex items-center justify-between mb-3">
-                                        <span class="font-medium text-slate-100 text-sm">Done</span>
-                                        <span class="text-xs text-slate-500">1</span>
+                                        <span class="font-medium text-slate-100 text-sm">Ready for Client</span>
+                                        <span class="text-xs text-amber-400">1</span>
                                     </div>
 
                                     <div class="space-y-3">
-                                        <div class="rounded-lg bg-slate-800/70 p-3">
-                                            <p class="font-medium text-[13px] text-slate-50">Export card trees</p>
+                                        <div class="rounded-lg bg-slate-800/70 p-3 border-l-2 border-amber-400">
+                                            <p class="font-medium text-[13px] text-slate-50">Strategy deck</p>
                                             <p class="mt-1 text-[11px] text-slate-400">
-                                                Use <code class="font-mono">GET /cards/:id/export</code> to get JSON hierarchy.
+                                                White-label export with audit trail.
                                             </p>
                                         </div>
                                     </div>
@@ -345,35 +384,36 @@
                                 <span class="text-emerald-300">you@slate</span>
                                 <span class="text-slate-500">:$</span>
                                 <span class="ml-1 text-slate-100">
-                                    export-card-tree --card "Export card trees" --format json
+                                    slate export --card "Strategy deck" --format white-label
                                 </span>
                             </div>
                             <div>
                                 <span class="text-sky-300">agent</span>
                                 <span class="text-slate-500"> &gt;</span>
                                 <span class="ml-1 text-slate-200">
-                                    exporting hierarchy (depth=3) and generating suggestions…
+                                    exporting client deliverable with audit trail…
                                 </span>
                             </div>
 
                             <div class="mt-2 rounded border border-slate-800 bg-slate-950/90 p-2">
-                                <p class="text-emerald-300 mb-1">▶ suggestions</p>
+                                <p class="text-emerald-300 mb-1">▶ AI suggestions</p>
                                 <pre class="whitespace-pre-wrap">
-- Generate REST API for card_tree.json
-- Propose DB schema for cards + relations
-- Draft tests for export endpoint
+- Generate presentation deck slides
+- Create executive summary document
+- Draft implementation timeline
                                 </pre>
                             </div>
 
                             <div class="mt-2 rounded border border-slate-800 bg-slate-950/90 p-2">
-                                <p class="text-emerald-300 mb-1">▶ card_tree.json</p>
+                                <p class="text-emerald-300 mb-1">▶ strategy_deck.json</p>
                                 <pre class="whitespace-pre-wrap">
 {
-  "id": 3,
-  "title": "Export card trees",
+  "title": "Q1 Strategy",
+  "client": "Acme Corp",
   "children": [
-    { "id": 7, "title": "Download JSON" },
-    { "id": 8, "title": "Copy to clipboard" }
+    { "title": "Market analysis" },
+    { "title": "Campaign plan" },
+    { "title": "Success metrics" }
   ]
 }
                                 </pre>
@@ -385,7 +425,7 @@
                             <input
                                 type="text"
                                 readonly
-                                value="generate backend service from this tree…"
+                                value="generate client presentation…"
                                 class="ml-2 flex-1 bg-transparent text-[10px] text-slate-300 font-mono outline-none border-none placeholder:text-slate-600"
                             />
                         </div>
@@ -426,6 +466,35 @@
             </div>
         </section>
 
+        <!-- Integrations -->
+        <section class="border-t border-slate-800/70 bg-slate-950/95">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
+                <p class="text-center text-sm text-slate-400 mb-8">Works with your favorite AI tools</p>
+                <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                    <div class="flex items-center gap-2 text-slate-400 hover:text-slate-200 transition-colors">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        <span class="text-sm font-medium">Claude</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-400 hover:text-slate-200 transition-colors">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.872zm16.597 3.855l-5.833-3.387L15.119 7.2a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023l-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135l-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08-4.778 2.758a.795.795 0 0 0-.393.681zm1.097-2.365l2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5z"/></svg>
+                        <span class="text-sm font-medium">ChatGPT</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-400 hover:text-slate-200 transition-colors">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span class="text-sm font-medium">GitHub Copilot</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-400 hover:text-slate-200 transition-colors">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M13.325 3.05L8.667 20.432l1.932.518 4.658-17.382-1.932-.518zM7.612 18.36l1.36-1.448-.001-.019-5.094-4.78 5.095-4.787v-.015l-1.36-1.448-6.476 6.25 6.476 6.247zM16.388 18.36l6.476-6.247-6.476-6.25-1.36 1.448v.015l5.094 4.787-5.094 4.78.001.019 1.359 1.448z"/></svg>
+                        <span class="text-sm font-medium">Cursor</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-400 hover:text-slate-200 transition-colors">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/></svg>
+                        <span class="text-sm font-medium">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Features -->
         <section id="features" class="border-t border-slate-800/70 bg-slate-950" aria-labelledby="features-heading">
             <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
@@ -437,16 +506,25 @@
 
                 <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 text-sm">
                     <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800/60 mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Clipboard icon" class="h-6 w-6">
+                        </div>
                         <h3 class="text-base font-semibold text-slate-50">Client-approved boards</h3>
                         <p class="mt-2 text-slate-300">Organize campaigns, automation builds, or innovation sprints.</p>
                     </div>
 
                     <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800/60 mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/744/744465.png" alt="Presentation icon" class="h-6 w-6">
+                        </div>
                         <h3 class="text-base font-semibold text-slate-50">AI-ready exports</h3>
                         <p class="mt-2 text-slate-300">Deliver prompt packs, implementation guides, or presentation decks.</p>
                     </div>
 
                     <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800/60 mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/942/942751.png" alt="Shield icon" class="h-6 w-6">
+                        </div>
                         <h3 class="text-base font-semibold text-slate-50">Compliance trail</h3>
                         <p class="mt-2 text-slate-300">Demonstrate data usage, approvals, and export history.</p>
                     </div>
@@ -461,16 +539,25 @@
                 <div class="mt-8 grid gap-6 md:grid-cols-3 text-sm">
 
                     <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800/60 mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Agency lead icon" class="h-6 w-6">
+                        </div>
                         <h3 class="text-base font-semibold text-slate-50">Agency leads</h3>
                         <p class="mt-2 text-slate-300">Track scope, approvals, and outcomes across clients.</p>
                     </div>
 
                     <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800/60 mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="Consultant icon" class="h-6 w-6">
+                        </div>
                         <h3 class="text-base font-semibold text-slate-50">Consultants</h3>
                         <p class="mt-2 text-slate-300">Turn discovery workshops into deliverables faster.</p>
                     </div>
 
                     <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                        <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800/60 mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/942/942750.png" alt="Stakeholder icon" class="h-6 w-6">
+                        </div>
                         <h3 class="text-base font-semibold text-slate-50">Client stakeholders</h3>
                         <p class="mt-2 text-slate-300">Review context-rich exports and sign off with confidence.</p>
                     </div>
@@ -491,7 +578,7 @@
                             <span class="font-medium text-slate-100">Can clients review exports without logging in?</span>
                         </summary>
                         <p class="mt-3 text-slate-300">
-                            Yes. Share read-only links or white-label decks that inherit your branding.
+                            Yes. Share read-only links or white-label decks that inherit your agency branding. Clients see polished deliverables without needing a Slate account.
                         </p>
                     </details>
 
@@ -500,7 +587,43 @@
                             <span class="font-medium text-slate-100">Does Slate keep compliance logs?</span>
                         </summary>
                         <p class="mt-3 text-slate-300">
-                            Every export is timestamped with requester, client, and attachments so you can prove how AI outputs were generated.
+                            Every export is timestamped with requester, client, board context, and attachments. This audit trail lets you prove exactly how AI outputs were generated and approved.
+                        </p>
+                    </details>
+
+                    <details class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between">
+                            <span class="font-medium text-slate-100">Can I white-label exports for clients?</span>
+                        </summary>
+                        <p class="mt-3 text-slate-300">
+                            Yes. Exports can be customized with your agency branding. Deliver professional presentations, implementation guides, or prompt packs that look like they came directly from your team.
+                        </p>
+                    </details>
+
+                    <details class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between">
+                            <span class="font-medium text-slate-100">How do I manage multiple client workspaces?</span>
+                        </summary>
+                        <p class="mt-3 text-slate-300">
+                            Each client gets isolated boards with separate access controls. Your team can switch between client contexts while maintaining clear boundaries. Activity logs track who did what, when.
+                        </p>
+                    </details>
+
+                    <details class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between">
+                            <span class="font-medium text-slate-100">What AI integrations are available?</span>
+                        </summary>
+                        <p class="mt-3 text-slate-300">
+                            Slate exports work with Claude, ChatGPT, Cursor, GitHub Copilot, and any LLM that accepts structured context. Your team can use whatever AI tools they prefer.
+                        </p>
+                    </details>
+
+                    <details class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between">
+                            <span class="font-medium text-slate-100">Is Slate available yet?</span>
+                        </summary>
+                        <p class="mt-3 text-slate-300">
+                            Slate is currently in pre-launch. Join the waitlist to get early access and help shape the product for agencies and consultancies.
                         </p>
                     </details>
 
